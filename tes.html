@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Password Authentication</title>
+</head>
+
+<body>
+    <h1>Password Authentication</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <p id="message"></p>
+
+    <script>
+        // Define a username and password for authentication
+        const validUsername = "myuser";
+        const validPassword = "mypassword";
+        const username = "Raj kiran"
+
+        // Get the form and message elements
+        const loginForm = document.getElementById("loginForm");
+        const message = document.getElementById("message");
+
+        // Add a submit event listener to the form
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from actually submitting
+
+            // Get the values entered by the user
+            const user = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Check if the entered username and password match the valid ones
+            if (user === validUsername && password === validPassword) {
+                message.textContent = "Authentication successful!";
+
+
+            } else {
+                message.textContent = "Authentication failed. Please try again.";
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodKing</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/resturant.css">
+    <script src="https://kit.fontawesome.com/210a6adb7c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- navbar seection -->
+    <nav>
+        <div class="logo">
+            <img src="../images/logo.png" alt="FoodKing" width="120px">
+        </div>
+
+        <div class="nav-items">
+
+
+            <div class="location">
+                <i class="fa-solid fa-location-arrow" style="color: #db0a0a;"></i>
+                <select id="location">
+                    <option value="newyork">New York</option>
+                    <option value="losangeles">Los Angeles</option>
+                    <option value="chicago">Chicago</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="Search for resturant and food">
+                <button class="search-btn" onclick="searchRestaurants()"> <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="resturant-desc">
+        <div class="resturant-img">
+            <img src="../images/mc-donald.jpg" width="400px" style="border-radius: 5px;" alt="">
+        </div>
+
+        <div class="resturant-title">
+            <h2>Mc Downald's</h2>
+            <h3>Pizza, Pasta, Italian, Fast Food</h3>
+            <h3>Sector-62, Noida</h3>
+            <p><span>Open Now - </span> 12midnight - 3am, 11am to 12midnight</p>
+            <div class="rating">
+                <span><i class="fa-solid fa-star" style="color: rgb(255, 209, 6);"></i> 4.5 </span>
+            </div>
+
+            <div class="direction">
+                <div>
+                    <img width="25" height="25" src="https://img.icons8.com/ios/50/marker--v1.png" alt="marker--v1" />
+                    <h3>Direction</h3>
+                </div>
+                <div>
+                    <img width="25" height="25" src="https://img.icons8.com/ios-glyphs/25/bookmark-ribbon.png"
+                        alt="bookmark-ribbon" />
+                    <h3>Bookmark</h3>
+                </div>
+                <div>
+                    <img width="25" height="25" src="https://img.icons8.com/material-rounded/24/share.png"
+                        alt="share" />
+                    <h3>Share</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- order section -->
+    <section class="order">
+        <div class="nav">
+            <div class="order-items">
+                <div class="active"> Menu</div>
+                <div>Reviews</div>
+                <div>Photos</div>
+            </div>
+
+
+            <div class="menu" style="display: none;">
+                <div class="menu-nav">
+                    <ul>
+                        <li class="active-menu">Personal Slice Veg Pizza. (37)</li>
+                        <li>Quesadilla-Fantastic Four (1)</li>
+                        <li>Pizzas (37)</li>
+                        <li>Classic Pizzas Pack Of 4 (2)</li>
+                        <li>Classic Pizzas For Classic Maniacs (15)</li>
+                        <li>Garlic Breads (7)</li>
+                        <li>Sides (11)</li>
+                        <li>Lasagna (3)</li>
+                        <li>Spaghetti (3)</li>
+                        <li>Desserts (2)</li>
+                        <li>Dips (5)</li>
+                        <li>Drinks (Beverages) (6)</li>
+                        <li>Deal Of The Day @159 (16)</li>
+                    </ul>
+                </div>
+
+                <div class="menu-list">
+                    <div class="heading">
+                        <h3>Personal Slice Veg Pizza</h3>
+                        <input type="search" name="menu-search" id="" placeholder="Search with Menu">
+                    </div>
+
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="../images/marherita.jpg" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-title">
+                                <h3>Margherita Pizza (Personal Giant Slice (22.5 Cm))</h3>
+                            </div>
+                            <div class="item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="item-price">$14</div>
+                            <div class="item-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum. Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Esse neque mollitia magni non, minus
+                                    ducimus id unde culpa molestias obcaecati!</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="../images/mc (2).png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-title">
+                                <h3>Cheesy Italian Burger</h3>
+                            </div>
+                            <div class="item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="item-price">$20</div>
+                            <div class="item-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum. Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Esse neque mollitia magni non, minus
+                                    ducimus id unde culpa molestias obcaecati!</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="../images/mc (3).png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-title">
+                                <h3>Grilled Burger</h3>
+                            </div>
+                            <div class="item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="item-price">$24</div>
+                            <div class="item-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum. Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Esse neque mollitia magni non, minus
+                                    ducimus id unde culpa molestias obcaecati!</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="../images/mc (4).png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-title">
+                                <h3>Veg Burger</h3>
+                            </div>
+                            <div class="item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="item-price">$15</div>
+                            <div class="item-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum. Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Esse neque mollitia magni non, minus
+                                    ducimus id unde culpa molestias obcaecati!</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="../images/mc (6).png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-title">
+                                <h3>Cheesy Italian Veg Burger</h3>
+                            </div>
+                            <div class="item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="item-price">$30</div>
+                            <div class="item-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum. Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Esse neque mollitia magni non, minus
+                                    ducimus id unde culpa molestias obcaecati!</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="../images/mc (6).png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-title">
+                                <h3>Cheesy Italian Veg Burger</h3>
+                            </div>
+                            <div class="item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="item-price">$20</div>
+                            <div class="item-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum. Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Esse neque mollitia magni non, minus
+                                    ducimus id unde culpa molestias obcaecati!</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="item-img">
+                            <img src="../images/mc (3).png" alt="">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-title">
+                                <h3>Cheesy Italian Veg Burger</h3>
+                            </div>
+                            <div class="item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="item-price">$22</div>
+                            <div class="item-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum. Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Esse neque mollitia magni non, minus
+                                    ducimus id unde culpa molestias obcaecati!</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="reviews" style="display: none;">
+                <h3>McDonald's Reviews</h3>
+
+                <div class="review-box">
+                    <div class="reviewer">
+                        <img src="../images/rating-user.png" alt="">
+                        <div class="reviewer-details">
+                            <h4>Rachita</h4>
+                            <p>8 reviews</p>
+                        </div>
+                    </div>
+
+                    <div class="review-content">
+                        <div class="rating">
+                            <span> 1 <i class="fa-solid fa-star"></i></span>
+                            <p>0 votes for helpful, 0 Comments</p>
+
+                            <div class="review-options">
+                                <p><i class="fa fa-light fa-thumbs-up"></i> HelpFul</p>
+                                <p><i class="fa fa-light fa-comment"></i> Comment</p>
+                                <p><i class="fa fa-light fa-share"></i> Share</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <div class="reviewer">
+                        <img src="../images/rating-user.png" alt="">
+                        <div class="reviewer-details">
+                            <h4>Sachin</h4>
+                            <p>4 reviews</p>
+                        </div>
+                    </div>
+
+                    <div class="review-content">
+                        <div class="rating">
+                            <span> 1 <i class="fa-solid fa-star"></i></span>
+                            <p>0 votes for helpful, 0 Comments</p>
+
+                            <div class="review-options">
+                                <p><i class="fa fa-light fa-thumbs-up"></i> HelpFul</p>
+                                <p><i class="fa fa-light fa-comment"></i> Comment</p>
+                                <p><i class="fa fa-light fa-share"></i> Share</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <div class="reviewer">
+                        <img src="../images/rating-user.png" alt="">
+                        <div class="reviewer-details">
+                            <h4>Babulal</h4>
+                            <p>9 reviews</p>
+                        </div>
+                    </div>
+
+                    <div class="review-content">
+                        <div class="rating">
+                            <span> 1 <i class="fa-solid fa-star"></i></span>
+                            <p>0 votes for helpful, 0 Comments</p>
+
+                            <div class="review-options">
+                                <p><i class="fa fa-light fa-thumbs-up"></i> HelpFul</p>
+                                <p><i class="fa fa-light fa-comment"></i> Comment</p>
+                                <p><i class="fa fa-light fa-share"></i> Share</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <div class="reviewer">
+                        <img src="../images/rating-user.png" alt="">
+                        <div class="reviewer-details">
+                            <h4>Supriya</h4>
+                            <p>4 reviews</p>
+                        </div>
+                    </div>
+
+                    <div class="review-content">
+                        <div class="rating">
+                            <span> 4.5<i class="fa-solid fa-star"></i></span>
+                            <p>0 votes for helpful, 0 Comments</p>
+
+                            <div class="review-options">
+                                <p><i class="fa fa-light fa-thumbs-up"></i> HelpFul</p>
+                                <p><i class="fa fa-light fa-comment"></i> Comment</p>
+                                <p><i class="fa fa-light fa-share"></i> Share</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photos">
+                <h3>McDonald's Photos</h3>
+
+                <div class="photos-btn">
+                    <button>All (74)</button>
+                    <button>Food (70)</button>
+                </div>
+
+                <div class="large-box">
+                    <div class="small-box"><img src="../images/marherita.jpg" alt=""></div>
+                    <div class="small-box"><img src="../images/mc (2).png" alt=""></div>
+                    <div class="small-box"><img src="../images/mc (3).png" alt=""></div>
+                    <div class="small-box"><img src="../images/marherita.jpg" alt=""></div>
+                    <div class="small-box"><img src="../images/mc (4).png" alt=""></div>
+                    <div class="small-box"><img src="../images/mc (1).png" alt=""></div>
+                    <div class="small-box"><img src="../images/marherita.jpg" alt=""></div>
+                    <div class="small-box"><img src="../images/mc (5).png" alt=""></div>
+                    <div class="small-box"><img src="../images/mc (3).png" alt=""></div>
+                    <div class="small-box"><img src="../images/marherita.jpg" alt=""></div>
+                    <div class="small-box"><img src="../images/mc (6).png" alt=""></div>
+                    <div class="small-box"><img src="../images/mc (2).png" alt=""></div>
+                    <div class="small-box"><img src="../images/marherita.jpg" alt=""></div>
+                    <div class="small-box"><img src="../images/mc (2).png" alt=""></div>
+                    <div class="small-box"><img src="../images/marherita.jpg" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+<script src="script/script.js"></script>
+
+</html>
